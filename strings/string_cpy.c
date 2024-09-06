@@ -8,6 +8,7 @@ int main()
 
 	char str[ ]= "This is source string";
 	char copiedstr[MAX];
+	char *result;
 	int len;
 
 	//str= "Hello World";  Array can't be assigned using = 
@@ -22,7 +23,7 @@ int main()
 	printf("Original String \n");
 	puts(str);
 	
-	strncpy(copiedstr, str, MAX);	
+	result = strncpy(copiedstr, str, MAX);	
 	copiedstr[MAX-1] = '\0';
 
 	printf("Original String \n");
@@ -30,6 +31,8 @@ int main()
 printf("\n\n");	
 	printf("Copied String\n");
 	puts(copiedstr);
+
+	printf("THe result string %s\n", result);
 printf("\n\n");
 	
 	printf("\n\n");
