@@ -1,0 +1,2 @@
+Testing file copy using fgetc and putc
+ÿ
